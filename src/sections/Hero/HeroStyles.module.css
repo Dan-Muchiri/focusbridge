@@ -1,0 +1,169 @@
+.container{
+    background-color: var(--e-global-color-primary);
+    overflow: hidden;
+    transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding : 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.left{
+    width: 50%;
+    padding-left: 10%;
+}
+.leftWords{
+    width: 70%;
+    text-align: left;
+}
+.leftWords h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px; /* Increased margin for more spacing below the heading */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.leftWords p {
+    font-size: 18px;
+    margin-bottom: 20px; /* Increased margin for more spacing below paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.buttons{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+.requestButton {
+    color: white;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: transform 0.2s;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid white;
+    position: relative; /* Make this button the relative parent */
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+.requestButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+    color: #fff; /* Ensure text remains white */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    transform: scale(1.05); /* Slightly enlarges button */
+    border-color: #ffffff; /* Changes border to white on hover */
+}
+
+
+.link{
+    display: flex;
+    gap: 35px; /* Initial gap between text and icon */
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2.5rem;
+    padding: 0;
+    font-size: 15px;
+    transition: background-color .5s, border-bottom .5s, gap .5s; /* Add transition for gap */
+    position: relative;
+    border-bottom: 1px solid #ffffff1f;
+}
+
+.link:hover{
+    border-bottom: 1px solid white; /* Change border to white on hover */
+    gap: 40px; /* Increase gap on hover */
+}
+.right {
+    width: 40%;
+    background-image: url('/collab.avif'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    height: 100vh; /* Match the height of the container */
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.rightH1{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
+}
+.rightWords{
+    display: none;
+}
+.right .buttons{
+    display: none;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 760px) {
+    .container {
+        height: 100vh;
+    }
+
+    .left{
+        display: none;
+    } 
+    .right {
+        width: 100%; /* Full width on small screens */
+        background-image: url('/collab.avif'); /* Set the background image */
+        background-size: cover; /* Ensure the image covers the entire div */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent tiling */
+        height: 100vh; /* Adjust height to content on small screens */
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+        justify-content: flex-end; /* Center content vertically */
+        padding: 55px 20px; /* Add padding for spacing */
+        text-align: start; /* Center text */
+    }
+
+    .rightWords {
+        display: block;
+        width: 90%; /* Wider text area */
+        text-align: center; /* Center text */
+    }
+
+    .rightWords h1 {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 15px; /* Increased margin for more spacing below the heading */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    .rightWords p {
+        font-size: 17px;
+        margin-bottom: 10px; /* Increased margin for more spacing below paragraphs */
+        line-height: 1.3; /* Adjust line height for better readability */
+    }
+
+    .right .buttons{
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+        align-items: center; /* Center buttons */
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .rightH1 {
+        display: none;
+    }
+    
+}

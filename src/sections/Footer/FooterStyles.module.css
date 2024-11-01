@@ -1,0 +1,105 @@
+.footer {
+    background-color: #272727;
+    color: white;
+    padding: 60px 30px; /* Increased padding for more space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px; /* Added margin to separate from footer bottom */
+}
+
+.footerLogo h2 {
+    font-size: 28px; /* Increased font size for logo */
+    line-height: 1.5; /* Adjusted line height for better spacing */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footerLinks,
+.footerContact{
+    margin: 0 50px; /* Increased margin for better spacing */
+}
+
+.footer h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footerLinks ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+.footerLinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px; /* Set a base font size for links */
+    line-height: 1.9; /* Added line height for readability */
+}
+
+.footerContact p{
+    line-height: 1.9
+}
+
+.footerLinks a:hover{
+    text-decoration: underline;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    width: 100%;
+    padding-top: 15px; /* Adjusted padding for better spacing */
+    font-size: 14px; /* Set a smaller font size for copyright text */
+    line-height: 1.4; /* Adjusted line height for readability */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Center align the content */
+    }
+
+    .footerLinks,
+    .footerContact {
+        margin: 20px 0; /* Adjust margins for vertical stacking */
+        text-align:start; /* Center text in smaller screens */
+    }
+
+    .footerLogo h2 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .footerLinks a,
+    .footerContact p {
+        font-size: 14px; /* Decrease font size for better readability */
+    }
+
+    .footerBottom {
+        font-size: 12px; /* Smaller font size for copyright */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 20px; /* Reduce padding for very small screens */
+    }
+
+    .footerLogo h2 {
+        font-size: 22px; /* Further decrease font size */
+    }
+
+    .footerLinks a,
+    .footerContact p {
+        font-size: 12px; /* Smaller font size for links and contact */
+    }
+}

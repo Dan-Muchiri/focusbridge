@@ -1,0 +1,75 @@
+.container{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 100px;
+    flex-direction: column;
+}
+.container h1{
+    font-weight: 500;
+    font-size: 48px;
+    color: #272727;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.separator{
+    background-color: #272727;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.container p{
+    color: #272727;
+    margin: 10px 0px;
+    max-width: 50ch;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.boast{
+    margin-top: 40px;
+    display: flex;
+    gap: 80px;
+}
+.boast p{
+    margin: 0;
+}
+.boast h1{
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #1822DC;
+    font-weight: 400;
+}
+
+/* Styles for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 20px;
+        align-items: flex-start;
+        text-align: start;
+        height: auto;
+    }
+    .container h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .container p {
+        font-size: 16px;
+        max-width: 100%; /* Remove max-width for full width on small screens */
+        text-align: start;
+    }
+    .boast {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .boast h1 {
+        font-size: 50px; /* Smaller font size */
+    }
+    .boast p {
+        font-size: 16px; /* Slightly smaller text */
+    }
+}
