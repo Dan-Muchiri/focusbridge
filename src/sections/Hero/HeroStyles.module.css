@@ -132,7 +132,9 @@
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center elements */
         justify-content: flex-end; /* Center content vertically */
-        padding: 80px 20px; /* Add padding for spacing */
+        padding-bottom: 100px; /* Add padding for spacing */
+        padding-left: 20px;
+        padding-right: 20px;
         text-align: start; /* Center text */
     }
 
