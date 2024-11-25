@@ -5,6 +5,7 @@ import Clients from './sections/Clients/Clients'
 import Services from './sections/Services/Services'
 import Contact from './sections/Contact/Contact';
 import Footer from './sections/Footer/Footer';
+import Testimonials from './sections/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Clients/>
       <Services/>
       <Contact/>
+      <Testimonials/>
       <Footer/>
     </Router>
       

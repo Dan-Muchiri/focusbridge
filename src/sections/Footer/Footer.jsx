@@ -18,13 +18,13 @@ const Footer = () => {
                 </div>
                 <div className={styles.footerContact}>
                     <h3>Contact Us</h3>
-                    <p>Email: info@yourcompany.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Address: 123 Business Ave, City, State, Zip</p>
+                    <p>Email: info@focusbridgepartners.com</p>
+                    <p>Phone: +254 723 807 031</p>
+                    <p>Nairobi, Kenya</p>
                 </div>
             </div>
             <div className={styles.footerBottom}>
-                <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} FocusBridge Partners LTD. All rights reserved.</p>
             </div>
         </footer>
     );

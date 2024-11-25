@@ -42,7 +42,7 @@ function Contact() {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <form action="" method="post" className={styles.formContainer} onSubmit={handleSubmit}>
+                    <form action="https://formspree.io/f/xkgnveno" method="post" className={styles.formContainer} onSubmit={handleSubmit}>
                         <div className={styles.formGroup}>
                             <label htmlFor="name">Name<span className={styles.required}>*</span></label>
                             <input

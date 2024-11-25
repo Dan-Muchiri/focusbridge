@@ -155,6 +155,7 @@ function Services() {
                                     <Link to="/">CYBERSECURITY</Link>
                                     <Link to="/">DIGITAL TRANSFORMATION</Link>
                                     <Link to="/">IT CONSULTANCY</Link>
+                                    <Link to="/">GRAPHIC DESIGN</Link>
                                 </div>
                                 <div className={styles.separator}></div>
                                 <div className={styles.cta}>
