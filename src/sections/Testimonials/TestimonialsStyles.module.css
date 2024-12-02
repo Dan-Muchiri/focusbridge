@@ -48,6 +48,12 @@
     margin-bottom: 20px;
 }
 
+.ctaGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
 .cta {
     font-size: 0.9rem;
     color: #272727;
@@ -62,6 +68,15 @@
     color: #272727;
     text-decoration: underline;
 }
+
+.rating {
+    color: #ffd700; /* Gold color for stars */
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
 
 
 /* Media Query for Small Screens */
@@ -87,8 +102,13 @@
         font-size: 0.9rem; /* Adjust title font size */
     }
 
+    .ctaGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .cta {
-        font-size: 0.8rem; /* Adjust CTA font size */
+        font-size: 0.8rem;
     }
 }
 
@@ -107,6 +127,6 @@
     }
 
     .cta {
-        font-size: 0.7rem; /* Adjust CTA font size for very small screens */
+        font-size: 0.7rem;
     }
 }

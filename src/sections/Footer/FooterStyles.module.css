@@ -61,6 +61,25 @@
     font-size: 14px; /* Set a smaller font size for copyright text */
     line-height: 1.4; /* Adjusted line height for readability */
 }
+.whatsappLink {
+    display: inline-flex;
+    align-items: center;
+    color: #25D366; /* WhatsApp green */
+    text-decoration: none;
+    font-size: 16px; /* Adjust for readability */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsappLink:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.whatsappIcon {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 20px; /* Icon size for better visibility */
+}
+
 
 /* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
