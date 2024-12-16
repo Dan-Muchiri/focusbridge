@@ -22,7 +22,6 @@ const Footer = () => {
                     <h3>Contact Us</h3>
                     <p>Email: info@focusbridgepartners.com</p>
                     <p>Phone: +254 723 807 031</p>
-                    <p>Nairobi, Kenya</p>
                     <p>
                             <a href="https://wa.me/254723807031" target="_blank" rel="noopener noreferrer" className={styles.whatsappLink}>
                                 <FontAwesomeIcon icon={faWhatsapp} className={styles.whatsappIcon} />
